@@ -15,13 +15,16 @@ The goal of this project is to recommend new music tracks (released after a spec
 The pipeline is organized into sequential notebooks:
 
 - `notebooks/`:
-  - `01_preprocessing.ipynb`: Data cleaning and feature engineering (Spotify Audio Features).
-  - `02_bipartite_graph.ipynb`: Construction of the Playlist-Track bipartite graph.
-  - `03_projection.ipynb`: Projection to item-item similarity graph.
-  - `04_coarsening.ipynb`: Implementation of the hybrid coarsening algorithm (Head/Tail strategy).
-  - `05_super_projection.ipynb`: Projection of the coarsened graph.
-  - `06_graphsage_training.ipynb`: Training the GNN via Link Prediction.
-  - `07_evaluation.ipynb`: Cold-Start inference and metric calculation (Recall@K, NDCG@K).
+  - `S0_init_project.ipynb`
+  - `S1_ingest_prep.ipynb`
+  - `S2_transform_load.ipynb`
+  - `S3_load.ipynb`
+  - `S4_coarsening.ipynb`
+  - `S5_projection.ipynb`
+  - `S6.1_embeddings_new_tracks.ipynb`
+  - `S6_GraphSAGE.ipynbb`
+  - `S7_recommender.ipynb`
+  - `S8_visualization.ipynb`
 - `conf/`: Configuration files (`config.yaml`).
 - `src/`: Helper scripts and utilities.
 
